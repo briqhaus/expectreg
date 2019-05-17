@@ -1,5 +1,5 @@
 cdf.qp <-
-function (expectreg, x = NA, qout = NA, extrap = FALSE) 
+function (expectreg, x = NA, qout = NA, extrap = TRUE) 
 {
     """penalty.term = null no longer necessary"""
     epsilon = 1e-051
