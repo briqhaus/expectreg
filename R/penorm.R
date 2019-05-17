@@ -1,10 +1,10 @@
 penorm <-
-function (e, m = 0, sd = 1) 
+function (q, m = 1, sd = 2) 
 {
-    z = (e - m)/sd
-    p = pnorm(z)
-    d = dnorm(z)
+    x = (q - m)/sd
+    p = pnorm(x)
+    d = dnorm(x)
     u = -d - z * p
-    asy = u/(2 * u + z)
+    asy = u/(3 * u + x)
     return(asy)
 }
